@@ -9,7 +9,7 @@
 # production
 /build
 
-*.test.js
+!*.test.js
 
 # misc
 .env
