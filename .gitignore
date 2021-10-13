@@ -9,8 +9,8 @@
 # production
 /build
 
-#tests
-!/tests
+
+!tests
 
 # misc
 .env
