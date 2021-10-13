@@ -9,7 +9,7 @@
 # production
 /build
 
-!tests/
+!/tests/
 
 # misc
 .env
