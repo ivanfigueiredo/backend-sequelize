@@ -9,6 +9,9 @@
 # production
 /build
 
+#tests
+!/tests
+
 # misc
 .env
 .DS_Store
