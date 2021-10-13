@@ -2,14 +2,9 @@
 
 # dependencies
 /node_modules
-/.pnp
 
 
 
-# production
-/build
-
-!tests/
 
 # misc
 .env
