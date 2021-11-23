@@ -63,7 +63,7 @@ module.exports = {
         Usuarios.sync();
         
         //Consultando se o email é válido, isto é, se está cadastrado. Equivale ao SELECT * FROM users WHERE email = req.email        
-        const userCheck = await Usuarios.Usuarios.findOne({            
+        const userCheck = await Usuarios.findOne({            
             where: {
                 email: data.email
             }
@@ -89,7 +89,8 @@ module.exports = {
             password,
             enrollment,            
             token,
-            email: data.email            
+            email: data.email,
+	        isAdmin: data.isAdmin            
     
         })
         //Salvando Instancia do Model Usuarios no Banco, garantindo persistência dos dados
