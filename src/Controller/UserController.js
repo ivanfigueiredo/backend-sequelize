@@ -28,20 +28,7 @@ module.exports = {
             }
         });
 
-        let classes = await Class.findAll({
-            where: {
-                users_id: user.id
-            }           
-          });        
-        let grades = await Grades.findAll({
-            where: {
-                users_id: user.id
-            }        
-        });
-
-        let coursers = await Course.findAll();        
-
-        
+       
 
         res.json({name: user.name, email: user.email, enrollment: user.enrollment});
     },
